@@ -24,6 +24,12 @@
                 </tr>
             </thead>
             <tbody>
+                <?php
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $database = "myshop";
+                ?>
                 <tr>
                     <td>10</td>
                     <td>Bill Gates</td>
@@ -32,8 +38,8 @@
                     <td>New York, USA</td>
                     <td>18/05/2022</td>
                     <td>
-                        <a class="btn btn-primary btn-sm" href="/">Edit</a>
-                        <a class="btn btn-danger btn-sm" href="/">Delete</a>
+                        <a class="btn btn-primary btn-sm" href="/PHP-CRUD-PROJECT/edit.php">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="/PHP-CRUD-PROJECT/delete.php">Delete</a>
                     </td>
                 </tr>
             </tbody>
