@@ -45,8 +45,11 @@
                 if(!$result){
                     die("Invalid query: ". $connection->error);
                 }
-                ?>
-                <tr>
+
+                //read data of each row
+                while($row = $result->fetch_assoc()){
+                    echo "
+                    <tr>
                     <td>10</td>
                     <td>Bill Gates</td>
                     <td>bill.gates@microsoft.com</td>
@@ -58,6 +61,11 @@
                         <a class="btn btn-danger btn-sm" href="/PHP-CRUD-PROJECT/delete.php">Delete</a>
                     </td>
                 </tr>
+                    
+                    ";
+                }
+                ?>
+                
             </tbody>
         </table>
     </div>
