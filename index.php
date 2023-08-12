@@ -41,6 +41,10 @@
                 //Read all row from database table
                 $sql = "SELECT * FROM clients";
                 $result = $connection->query($sql);
+
+                if(!$result){
+                    die("Invalid query: ". $connection->error);
+                }
                 ?>
                 <tr>
                     <td>10</td>
