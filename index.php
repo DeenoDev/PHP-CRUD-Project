@@ -10,6 +10,34 @@
     <div class="container my-5">
         <h2>List Of Clients</h2>
         <a class="btn btn-primary" role="button" href="/PHP-CRUD-PROJECT/create.php">New Client</a>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Created</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>Bill Gates</td>
+                    <td>bill.gates@microsoft.com</td>
+                    <td>+111222333</td>
+                    <td>New York, USA</td>
+                    <td>18/05/2022</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="/">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     
 </body>
