@@ -3,6 +3,13 @@ $name = "";
 $email = "";
 $phone = "";
 $address = "";
+
+if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+}
 ?>
 
 
@@ -28,21 +35,21 @@ $address = "";
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label" for="">Email</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="email" value="<?php echo $name; ?>">
+                    <input type="text" class="form-control" name="email" value="<?php echo $email; ?>">
                 </div>
             </div>
 
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label" for="">Phone</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="phone" value="<?php echo $name; ?>">
+                    <input type="text" class="form-control" name="phone" value="<?php echo $phone; ?>">
                 </div>
             </div>
 
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label" for="">Address</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="address" value="<?php echo $name; ?>">
+                    <input type="text" class="form-control" name="address" value="<?php echo $address; ?>">
                 </div>
             </div>
 
