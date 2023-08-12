@@ -57,8 +57,8 @@
                         <td>$row[address]</td>
                         <td>$row[created_at]</td>
                         <td>
-                            <a class="btn btn-primary btn-sm" href="/PHP-CRUD-PROJECT/edit.php?id=$row[id]">Edit</a>
-                            <a class="btn btn-danger btn-sm" href="/PHP-CRUD-PROJECT/delete.php?id=$row[id]">Delete</a>
+                            <a class='btn btn-primary btn-sm' href='/PHP-CRUD-Project/edit.php?id=$row[id]'>Edit</a>
+                            <a class='btn btn-danger btn-sm' href='/PHP-CRUD-Project/delete.php?id=$row[id]'>Delete</a>
                         </td>
                     </tr>
                     
