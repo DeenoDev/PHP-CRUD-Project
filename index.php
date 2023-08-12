@@ -50,17 +50,17 @@
                 while($row = $result->fetch_assoc()){
                     echo "
                     <tr>
-                    <td>10</td>
-                    <td>Bill Gates</td>
-                    <td>bill.gates@microsoft.com</td>
-                    <td>+111222333</td>
-                    <td>New York, USA</td>
-                    <td>18/05/2022</td>
-                    <td>
-                        <a class="btn btn-primary btn-sm" href="/PHP-CRUD-PROJECT/edit.php">Edit</a>
-                        <a class="btn btn-danger btn-sm" href="/PHP-CRUD-PROJECT/delete.php">Delete</a>
-                    </td>
-                </tr>
+                        <td>$row[id]</td>
+                        <td>$row[name]</td>
+                        <td>$row[email]</td>
+                        <td>$row[phone]</td>
+                        <td>$row[address]</td>
+                        <td>$row[created_at]</td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" href="/PHP-CRUD-PROJECT/edit.php?id=$row[id]">Edit</a>
+                            <a class="btn btn-danger btn-sm" href="/PHP-CRUD-PROJECT/delete.php?id=$row[id]">Delete</a>
+                        </td>
+                    </tr>
                     
                     ";
                 }
