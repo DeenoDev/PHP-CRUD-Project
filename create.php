@@ -1,3 +1,11 @@
+<?php
+$name = "";
+$email = "";
+$phone = "";
+$address = "";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,28 +21,28 @@
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label" for="">Name</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="name" value="">
+                    <input type="text" class="form-control" name="name" value="<?php echo $name; ?>">
                 </div>
             </div>
 
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label" for="">Email</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="email" value="">
+                    <input type="text" class="form-control" name="email" value="<?php echo $name; ?>">
                 </div>
             </div>
 
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label" for="">Phone</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="phone" value="">
+                    <input type="text" class="form-control" name="phone" value="<?php echo $name; ?>">
                 </div>
             </div>
 
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label" for="">Address</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="address" value="">
+                    <input type="text" class="form-control" name="address" value="<?php echo $name; ?>">
                 </div>
             </div>
 
