@@ -29,6 +29,14 @@
                 $username = "root";
                 $password = "";
                 $database = "myshop";
+
+                //Create connection to database
+                $connection = new mysqli($servername, $username, $password, $database);
+
+                //Check connection
+                if ($connection->connect_error) {
+                    die("Connection Failed: " . $connection->connect_error);
+                }
                 ?>
                 <tr>
                     <td>10</td>
