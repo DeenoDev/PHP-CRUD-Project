@@ -12,7 +12,7 @@
         <a class="btn btn-primary" role="button" href="/PHP-CRUD-PROJECT/create.php">New Client</a>
         <br>
         <table>
-            <thead>
+            <thead class="my-5">
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
