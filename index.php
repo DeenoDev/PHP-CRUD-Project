@@ -37,6 +37,10 @@
                 if ($connection->connect_error) {
                     die("Connection Failed: " . $connection->connect_error);
                 }
+
+                //Read all row from database table
+                $sql = "SELECT * FROM clients";
+                $result = $connection->query($sql);
                 ?>
                 <tr>
                     <td>10</td>
