@@ -42,6 +42,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP-CRUD-Project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div class="container my-5">
@@ -52,7 +53,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             echo "
             <div class='alert alert-warning alert-dismissible fade show' role='alert'>
                 <strong>$errorMessage</strong>
-                <button type='button' class='btn-close' data-bs-dismiss='' aria-label='Close'></button>
+                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
             </div>  
             ";
         }
