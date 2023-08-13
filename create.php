@@ -29,6 +29,14 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
         }
 
         //Add new client into database
+        $sql = "INSERT INTO clients (name, email, phone, address)" .
+        "VALUES ('$name', '$email', '$phone', '$address')";
+        $result = $connection->query($sql);
+
+        if (!result){
+            $errorMessage = "Invalid query: " . $connection->error;
+            break;
+        }
 
         $name = "";
         $email = "";
