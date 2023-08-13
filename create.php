@@ -33,7 +33,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
         "VALUES ('$name', '$email', '$phone', '$address')";
         $result = $connection->query($sql);
 
-        if (!result){
+        if (!$result){
             $errorMessage = "Invalid query: " . $connection->error;
             break;
         }
@@ -44,6 +44,9 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
         $address = "";
 
         $successMessage = "Client added correctly";
+
+        header("Location: /PHP-CRUD-Project/index.php");
+        exit;
 
 
 
