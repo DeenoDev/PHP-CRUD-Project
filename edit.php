@@ -30,7 +30,17 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET') {
     // Read the row of the selected client from database table
     $sql = "SELECT * FROM clients WHERE id=$id";
     $result = $connection->query($sql);
-    $row = $result->fetch_assoc;
+    $row = $result->fetch_assoc();
+
+    if (!$row) {
+        header("location: /PHP-CRUD-Project/index.html");
+        exit;
+    }
+
+    $name = $row["name"];
+    $email = $row["email"];
+    $phone = $row["phone"];
+    $address = $row["address"];
 } 
 else {
     //POST method: Update the data of the client
