@@ -7,6 +7,20 @@ $address = "";
 
 $errorMessage = "";
 $successMessage = "";
+
+if ( $_SERVER['REQUEST_METHOD'] == 'GET') {
+    //GET method: Show the data of the client
+
+    if (!isset($_GET['id'])) {
+        header("location: /PHP-CRUD-Project/index.html");
+        exit;
+    }
+
+    $id = $_GET['id'];
+} 
+else {
+    //POST method: Update the data of the client
+}
 ?>
 
 
