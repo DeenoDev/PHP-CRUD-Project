@@ -26,6 +26,11 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET') {
     }
 
     $id = $_GET['id'];
+
+    // Read the row of the selected client from database table
+    $sql = "SELECT * FROM clients WHERE id=$id";
+    $result = $connection->query($sql);
+    $row = $result->fetch_assoc;
 } 
 else {
     //POST method: Update the data of the client
