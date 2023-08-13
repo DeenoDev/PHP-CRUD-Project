@@ -61,6 +61,18 @@ else {
         "SET name = '$name', email = '$email', phone = '$phone', address = '$address' " .
         "WHERE id = $id";
 
+        $result = $connection->query($sql);
+
+        if (!result) {
+            $errorMessage = "Invalid query: " . $connection->error;
+            break;
+        }
+
+        $successMessage = "Client updated correctly";
+
+        header("Location: /PHP-CRUD-Project/index.php");
+        exit;
+
     } while(false);
 }
 ?>
