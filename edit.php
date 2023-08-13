@@ -44,6 +44,24 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET') {
 } 
 else {
     //POST method: Update the data of the client
+
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+
+    do {
+        if(empty($id) || empty($name) || empty($email) || empty($phone) || empty($address)) {
+            $errorMessage = "All fields are required";
+            break;
+        }
+
+        $sql = "UPDATE clients " .
+        "SET name = '$name', email = '$email', phone = '$phone', address = '$address' " .
+        "WHERE id = $id";
+
+    } while(false);
 }
 ?>
 
