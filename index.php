@@ -39,7 +39,7 @@
                     die("Connection Failed: " . $connection->connect_error);
                 }
 
-                //Read all row from database table
+                //Read all rows from database table
                 $sql = "SELECT * FROM clients";
                 $result = $connection->query($sql);
 
