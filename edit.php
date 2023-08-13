@@ -45,11 +45,11 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET') {
 else {
     //POST method: Update the data of the client
 
-    $id = $_POST['id'];
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
+    $id = $_POST["id"];
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $phone = $_POST["phone"];
+    $address = $_POST["address"];
 
     do {
         if(empty($id) || empty($name) || empty($email) || empty($phone) || empty($address)) {
@@ -63,7 +63,7 @@ else {
 
         $result = $connection->query($sql);
 
-        if (!result) {
+        if (!$result) {
             $errorMessage = "Invalid query: " . $connection->error;
             break;
         }
@@ -91,7 +91,7 @@ else {
 </head>
 <body>
     <div class="container my-5">
-        <h2>New Client</h2>
+        <h2>Edit Client</h2>
 
         <?php
         if ( !empty($errorMessage)) {
@@ -107,7 +107,7 @@ else {
 
 
         <form method="post">
-            <input type="hidden" value="<?php echo $id; ?>">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label" for="">Name</label>
                 <div class="col-sm-6">
