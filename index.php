@@ -70,7 +70,10 @@
                 
             </tbody>
         </table>
+
+        
     </div>
+    <p class="text-center">Project created by Deyano Klaasen.</p>
     
 </body>
 </html>
