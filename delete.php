@@ -12,6 +12,9 @@ if ( isset($_GET["id"]) ) {
 
     $sql = "DELETE FROM clients WHERE id = $id";
     $connection->query($sql);
+
+    header("location: /PHP-CRUD-Project/index.php");
+    exit;
 }
 
 
