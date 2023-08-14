@@ -9,6 +9,9 @@ if ( isset($_GET["id"]) ) {
 
     //Create connection
     $connection = new mysqli($servername, $username, $password, $database);
+
+    $sql = "DELETE FROM clients WHERE id = $id";
+    $connection->query($sql);
 }
 
 
